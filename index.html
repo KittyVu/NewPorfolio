@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xuyen • Portfolio</title>
+    <meta name="description" content="Portfolio of Xuyen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-hidden="true"></div>
+        <nav class="nav center" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="hero" class="section hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Hi, I’m <span class="accent">Xuyen</span>.</h1>
+            <p class="lead">I build delightful, performant web experiences. Explore my recent work and get in touch.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="./resume.pdf" target="_blank" rel="noopener">My Resume</a>
+            </div>
+          </div>
+
+          <!-- Avatar: middle-part hair + glasses -->
+          <div class="hero-art" aria-hidden="true">
+            <svg class="avatar" viewBox="0 0 240 240" role="img" aria-label="Avatar with glasses and middle-part hair">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#ffd1e8" />
+                  <stop offset="100%" stop-color="#ff4fa3" />
+                </linearGradient>
+                <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#ff4fa322"/>
+                </filter>
+              </defs>
+
+              <!-- Background blob -->
+              <path d="M120 10c38 0 95 20 95 80s-57 120-95 120-95-60-95-120 57-80 95-80z" fill="url(#g1)" filter="url(#softShadow)"/>
+
+              <!-- Face circle -->
+              <circle cx="120" cy="120" r="58" fill="#ffeef7" stroke="#ffa7cf" stroke-width="2"/>
+
+              <!-- Hair (middle part) -->
+              <path d="M72 108c0-30 20-50 48-50s48 20 48 50c-10-8-24-12-48-12s-38 4-48 12z" fill="#1a1a1a"/>
+              <rect x="118" y="68" width="4" height="12" rx="2" fill="#1a1a1a"/>
+
+              <!-- Glasses -->
+              <g fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round">
+                <rect x="88" y="114" width="28" height="18" rx="6"/>
+                <rect x="124" y="114" width="28" height="18" rx="6"/>
+                <line x1="116" y1="122" x2="124" y2="122"/>
+                <path d="M152 122c8 0 16 8 16 16"/>
+                <path d="M88 122c-8 0-16 8-16 16"/>
+              </g>
+
+              <!-- Mouth -->
+              <path d="M100 148c6 10 34 10 40 0" stroke="#ff4fa3" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- About -->
+      <section id="about" class="section alt">
+        <div class="container">
+          <div class="about-split">
+            <div class="about-left">
+              <h2 class="section-title">About</h2>
+              <div class="about-photo" aria-hidden="true">
+                <svg viewBox="0 0 120 120" class="about-photo-svg" role="img" aria-label="Woman avatar with long hair and glasses">
+                  <defs>
+                    <linearGradient id="abg2" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#ffd1e8"/>
+                      <stop offset="100%" stop-color="#ff4fa3"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="60" cy="60" r="58" fill="url(#abg2)"/>
+                  <circle cx="60" cy="60" r="40" fill="#ffeef7" stroke="#ffa7cf"/>
+                  <!-- Long hair silhouette -->
+                  <path d="M24 70c0-30 18-48 36-48s36 18 36 48v16c0 10-8 18-18 18H42c-10 0-18-8-18-18V70z" fill="#1a1a1a"/>
+                  <!-- Fringe/top hair -->
+                  <path d="M32 54c4-16 16-26 28-26s24 10 28 26c-8-6-18-8-28-8s-20 2-28 8z" fill="#1a1a1a"/>
+                  <!-- Face on top of hair -->
+                  <circle cx="60" cy="62" r="26" fill="#ffeef7" stroke="#ffa7cf"/>
+                  <!-- Glasses -->
+                  <g fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round">
+                    <rect x="42" y="60" width="16" height="10" rx="4"/>
+                    <rect x="62" y="60" width="16" height="10" rx="4"/>
+                    <line x1="58" y1="65" x2="62" y2="65"/>
+                  </g>
+                  <!-- Smile -->
+                  <path d="M50 78c6 6 14 6 20 0" stroke="#ff4fa3" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
+              
+            </div>
+
+            <div class="about-right">
+              <article class="role-card">
+                <h3>Frontend Developer</h3>
+                <p>I craft accessible, fast, and polished interfaces with a focus on user experience and modern web standards.</p>
+              </article>
+              <article class="role-card">
+                <h3>Backend Developer</h3>
+                <p>I design and implement reliable APIs and services, emphasizing simplicity, security, and maintainability.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div id="skills-cards" class="skills-grid" aria-label="Skill cards"></div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <article class="card">
+              <div class="card-media" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Interactive 3D Portfolio</h3>
+                <p>WebGL-driven experience showcasing personal work with smooth interactions.</p>
+                <div class="card-actions">
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo: Interactive 3D Portfolio">View Demo</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code: Interactive 3D Portfolio">View Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Design System</h3>
+                <p>Reusable accessible components with tokens and theming.</p>
+                <div class="card-actions">
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo: Design System">View Demo</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code: Design System">View Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Performance Audit</h3>
+                <p>Core Web Vitals improvements for a multi-page marketing site.</p>
+                <div class="card-actions">
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo: Performance Audit">View Demo</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code: Performance Audit">View Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container contact-card">
+          <h2 class="section-title">Get in touch</h2>
+          <p>Want to collaborate or have a project in mind?</p>
+          <a class="btn btn-primary" href="mailto:hello@example.com">Email me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Xuyen. Built with <span aria-hidden="true">♥</span>.</p>
+        <a href="#hero" class="to-top" aria-label="Back to top">Top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
+
