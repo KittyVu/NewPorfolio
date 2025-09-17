@@ -51,6 +51,24 @@ body {
 .nav-list a { color: #eaeaf2; text-decoration: none; padding: 8px 10px; border-radius: 10px; }
 .nav-list a:hover { background: rgba(34,197,94,0.12); color: white; }
 .nav-toggle { display: none; }
+.my-avatar-head { 
+  width: 18vw;
+  height: 35vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 2em;
+}
+
+.my-avatar-about { 
+  width: 14vw;
+  height: 28vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 2em;
+}
+
 
 /* Buttons */
 .btn { display: inline-block; border-radius: 12px; padding: 12px 16px; text-decoration: none; font-weight: 600; transition: transform 0.1s ease, box-shadow 0.2s ease; }
@@ -112,7 +130,7 @@ body {
 
 /* About split layout */
 .about-split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 18px; align-items: start; }
-.about-left .about-photo { width: 120px; height: 120px; border-radius: 18px; background: rgba(34,197,94,0.10); border: 1px solid rgba(34,197,94,0.25); display: grid; place-items: center; margin: 10px 0 8px; }
+/* .about-left .about-photo { width: 120px; height: 120px; border-radius: 18px; background: rgba(34,197,94,0.10); border: 1px solid rgba(34,197,94,0.25); display: grid; place-items: center; margin: 10px 0 8px; } */
 .about-photo-svg { width: 88px; height: 88px; display: block; }
 .about-intro { color: #e9dfea; margin: 0; }
 .about-right { display: grid; grid-template-columns: 1fr; gap: 16px; }
