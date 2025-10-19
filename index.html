@@ -14,64 +14,57 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Header -->
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand" aria-hidden="true"></div>
         <nav class="nav center" aria-label="Primary">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
           <ul id="nav-list" class="nav-list">
+            <li class="no-show"><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="no-show"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- Main -->
     <main id="main">
       <!-- Hero -->
       <section id="hero" class="section hero-section">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <h1>Hi, I’m <span class="accent">Xuyen</span>.</h1>
+            <h1>Hi, I’m <span class="accent">Xuyen</span></h1>
             <p class="lead">I build delightful, performant web experiences. Explore my recent work and get in touch.</p>
             <div class="hero-cta">
               <a class="btn btn-primary" href="#projects">View Projects</a>
               <a class="btn btn-ghost" href="./resume.pdf" target="_blank" rel="noopener">My Resume</a>
             </div>
           </div>
-
-          <!-- Avatar: middle-part hair + glasses -->
           <div class="hero-art" aria-hidden="true">
-              <img class="my-avatar-head" src="Xuyen-chibi.jpg" alt="Xuyen-avatar">
+            <img class="my-avatar-head" src="Xuyen-chibi.jpg" alt="Xuyen-avatar">
           </div>
         </div>
       </section>
 
-      
       <!-- About -->
       <section id="about" class="section alt">
-        <div class="container">
-          <div class="about-split">
-            <div class="about-left">
-              <h2 class="section-title">About Me</h2>
-              <div class="about-photo" aria-hidden="true">
-                <img class="my-avatar-about" src="Xuyen-chibi.jpg" alt="Xuyen-avatar">
-              </div>
-              
+        <div class="container about-split">
+          <div class="about-left">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-photo" aria-hidden="true">
+              <img class="my-avatar-about" src="Xuyen-chibi.jpg" alt="Xuyen-avatar">
             </div>
-
-            <div class="about-right">
-              <article class="role-card">
-                <h3>Frontend Developer</h3>
-                <p>I craft accessible, fast, and polished interfaces with a focus on user experience and modern web standards.</p>
-              </article>
-              <article class="role-card">
-                <h3>Backend Developer</h3>
-                <p>I design and implement reliable APIs and services, emphasizing simplicity, security, and maintainability.</p>
-              </article>
-            </div>
+          </div>
+          <div class="about-right">
+            <article class="role-card">
+              <h3>Fullstack Developer</h3>
+              <p>I craft accessible, fast, and polished interfaces with a focus on user experience and modern web standards.</p>
+            </article>
+            <article class="role-card">
+              <h3>Telecommunication Engineer</h3>
+              <p>I design and implement reliable APIs and services, emphasizing simplicity, security, and maintainability.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -85,40 +78,40 @@
       </section>
 
       <!-- Projects -->
-      <section id="projects" class="section">
+      <section id="projects" class="section alt">
         <div class="container">
           <h2 class="section-title">Projects</h2>
           <div class="projects-grid">
-            <article class="card">
+            <article class="role-card">
               <div class="card-media" aria-hidden="true"></div>
               <div class="card-body">
                 <h3>Interactive 3D Portfolio</h3>
                 <p>WebGL-driven experience showcasing personal work with smooth interactions.</p>
                 <div class="card-actions">
-                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo: Interactive 3D Portfolio">View Demo</a>
-                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code: Interactive 3D Portfolio">View Code</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo">View Demo</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code">View Code</a>
                 </div>
               </div>
             </article>
-            <article class="card">
+            <article class="role-card">
               <div class="card-media" aria-hidden="true"></div>
               <div class="card-body">
                 <h3>Design System</h3>
                 <p>Reusable accessible components with tokens and theming.</p>
                 <div class="card-actions">
-                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo: Design System">View Demo</a>
-                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code: Design System">View Code</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo">View Demo</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code">View Code</a>
                 </div>
               </div>
             </article>
-            <article class="card">
+            <article class="role-card">
               <div class="card-media" aria-hidden="true"></div>
               <div class="card-body">
                 <h3>Performance Audit</h3>
                 <p>Core Web Vitals improvements for a multi-page marketing site.</p>
                 <div class="card-actions">
-                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo: Performance Audit">View Demo</a>
-                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code: Performance Audit">View Code</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View demo">View Demo</a>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-label="View code">View Code</a>
                 </div>
               </div>
             </article>
@@ -127,7 +120,7 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="section">
+      <section id="contact" class="section alt">
         <div class="container contact-card">
           <h2 class="section-title">Get in touch</h2>
           <p>Want to collaborate or have a project in mind?</p>
@@ -136,6 +129,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Xuyen. Built with <span aria-hidden="true">♥</span>.</p>
@@ -145,6 +139,4 @@
 
     <script src="./script.js" defer></script>
   </body>
-  </html>
-
-
+</html>
