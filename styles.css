@@ -59,7 +59,7 @@ body {
 
 .section.alt {
   background: linear-gradient(180deg, rgba(255, 163, 223, 0.07), rgba(197, 164, 255, 0.05) 45%, transparent 80%);
-  
+
 }
 
 .section-title {
@@ -83,7 +83,7 @@ body {
   z-index: 9999;
   backdrop-filter: saturate(160%) blur(12px);
   background: rgba(15, 15, 18, 0.85);
- 
+
   padding: 1em;
 }
 
@@ -230,12 +230,12 @@ main,
 
 .btn-ghost {
   color: var(--pink-200);
-  border: 1px solid  rgba(255, 79, 163, 0.22);
+  border: 1px solid rgba(255, 79, 163, 0.22);
   background: rgba(34, 197, 94, 0.06);
 }
 
 .btn-ghost:hover {
-  background:  rgba(255, 79, 163, 0.22);
+  background: rgba(255, 79, 163, 0.22);
 }
 
 /* Skip link */
@@ -311,13 +311,42 @@ main,
 }
 
 .card-media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 14 / 10;
   background: linear-gradient(135deg, rgba(34, 197, 94, 0.25), rgba(134, 239, 172, 0.08));
-  border-bottom: 1px solid rgba(34, 197, 94, 0.18);
+
+}
+
+.p1 {
+  background-image: url('./images/RecipesBlog-detail.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p2 {
+  background-image: url('./images/EbayFake-Desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p3 {
+  background-image: url('./images/EbayFake-Desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p4 {
+  background-image: url('./images/Yoga-Home.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-body {
   padding: 16px;
+
 }
 
 .card h3 {
@@ -588,7 +617,7 @@ main,
   padding: 22px;
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(255, 79, 163, 0.10), rgba(179, 136, 255, 0.08));
-  border: 1px solid  rgba(255, 79, 163, 0.22);
+  border: 1px solid rgba(255, 79, 163, 0.22);
   box-shadow: 0 12px 44px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(34, 197, 94, 0.15) inset;
   transform-style: preserve-3d;
   min-height: 180px;
@@ -677,10 +706,10 @@ main,
 
 .footer-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 16px 0;
-  color:var(--pink-200);
+  color: var(--pink-200);
 }
 
 .to-top {
