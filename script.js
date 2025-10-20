@@ -30,17 +30,17 @@ const skillsConfig = {
   groups: [
     {
       title: 'Frontend', icon: '🎨', items: [
-        'TypeScript', 'JavaScript', 'React', 'Next.js', 'CSS / SASS', 'Accessibility'
+        'TypeScript', 'JavaScript', 'Reactjs', 'Next.js', 'CSS / SASS', 'HTML', 'Tailwind'
       ]
     },
     {
       title: 'Backend', icon: '🛠️', items: [
-        'Node.js', 'Express', 'REST', 'GraphQL'
+        'Node.js', 'Express', 'Postgresql', 'PHP'
       ]
     },
     {
       title: 'Others', icon: '✨', items: [
-        'Three.js', 'Git', 'CI/CD', 'Testing'
+        'Docker', 'Git', 'CI/CD', 'Testing'
       ]
     }
   ]
@@ -63,22 +63,24 @@ function renderSkillCards() {
 
     const list = document.createElement('ul');
     list.className = 'skill-list';
-    const iconMap = {
-      'TypeScript': '🟦',
-      'JavaScript': '🟨',
-      'React': '⚛️',
-      'Next.js': '⬛',
-      'CSS / SASS': '🎨',
-      'Accessibility': '♿',
-      'Node.js': '🟩',
-      'Express': '🚏',
-      'REST': '🔗',
-      'GraphQL': '🕸️',
-      'Three.js': '🕹️',
-      'Git': '🔧',
-      'CI/CD': '🔁',
-      'Testing': '✅'
-    };
+const iconMap = {
+  'TypeScript': '🔷',      // Blue diamond for TypeScript
+  'JavaScript': '🟨',      // Yellow square for JS
+  'React': '⚛️',           // Atom icon for React
+  'Next.js': '⏩',          // Fast forward for Next.js
+  'CSS / SASS': '🎨',       // Palette for styling
+  'HTML': '📄',             // Page/document for HTML
+  'Tailwind': '💨',         // Wind for Tailwind
+  'Node.js': '🟢',           // Green circle for Node.js
+  'Express': '🚂',           // Train for Express
+  'PHP': '🐘',              // Elephant for PHP
+  'Postgresql': '🗄️',       // Elephant for PostgreSQL
+  'Docker': '🐳',           // Whale for Docker
+  'Git': '🌲',               // Tree for Git (like a branch)
+  'CI/CD': '⚙️',            // Gear for automation
+  'Testing': '🧪'           // Test tube for testing
+};
+
     for (const item of group.items) {
       const li = document.createElement('li');
       const ic = document.createElement('span');

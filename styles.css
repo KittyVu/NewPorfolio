@@ -43,9 +43,12 @@ body {
   color: #f7f7fb;
   /* Simplified soft pink background */
   background:
-    radial-gradient(800px 420px at 80% -10%, rgba(var(--bg-pink), 0.20), transparent 60%),
-    radial-gradient(640px 360px at 0% 20%, rgba(var(--bg-lavender), 0.14), transparent 60%),
+    radial-gradient(800px 420px at 80% 0%, rgba(var(--bg-pink), 0.20) 0%, transparent 60%),
+    radial-gradient(640px 360px at 0% 20%, rgba(var(--bg-lavender), 0.14) 0%, transparent 60%),
     var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .container {
@@ -137,7 +140,7 @@ main,
 }
 
 .my-avatar-head {
-  width: 20vw;
+  width: 12vw;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -225,7 +228,8 @@ main,
 }
 
 .btn-primary:hover {
-  filter: brightness(1.07);
+  color: var(--pink-500);
+  background: white;
 }
 
 .btn-ghost {
@@ -324,7 +328,7 @@ main,
 }
 
 .p2 {
-  background-image: url('./images/EbayFake-Desktop.png');
+  background-image: url('./images/privateChat.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -339,6 +343,13 @@ main,
 
 .p4 {
   background-image: url('./images/Yoga-Home.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p5 {
+  background-image: url('./images/publicChat.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -587,12 +598,12 @@ main,
   }
 
   .my-avatar-about {
-    width: 50vw;
+    width: 30vw;
 
   }
 
   .my-avatar-head {
-    width: 50vw;
+    width: 30vw;
     height: auto;
   }
 
@@ -717,6 +728,10 @@ main,
   text-decoration: none;
 }
 
+.top-img {
+  width: 2em;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-grid {
@@ -733,96 +748,93 @@ main,
 
   .hero-art {
     justify-self: center;
-
-    .hero-art {
-      justify-self: center;
-      order: -1;
-    }
-
-    .projects-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .about-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .skill-meters {
-      grid-template-columns: 1fr;
-    }
-
-    .about-photo {
-      width: 50vw;
-    }
-
-    #skills {
-      margin: 0 auto;
-    }
-
-    #about {
-      display: none;
-    }
+    order: -1;
   }
 
-  @media (max-width: 560px) {
-    .nav-toggle {
-      display: inline-block;
-      background: rgba(255, 79, 163, 0.12);
-      color: white;
-      border: 1px solid rgba(255, 79, 163, 0.35);
-      border-radius: 10px;
-      padding: 8px 10px;
-    }
-
-    .no-show {
-      display: none;
-      position: absolute;
-      right: 16px;
-      top: 54px;
-      padding: 10px;
-      background: #17171b;
-      border: 1px solid rgba(255, 79, 163, 0.2);
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-    }
-
-    .nav-list.show {
-      display: grid;
-      gap: 6px;
-    }
-
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .about-left {
-      margin: 0 auto;
-    }
-
-    #skills,
-    #main,
-    #projects {
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    #about {
-      display: none;
-    }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Focus ring */
-  a,
-  button {
-    outline: none;
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 
-  a:focus-visible,
-  button:focus-visible {
-    box-shadow: 0 0 0 3px var(--ring);
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-meters {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    width: 50vw;
+  }
+
+  #skills {
+    margin: 0 auto;
+  }
+
+  #about {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-toggle {
+    display: inline-block;
+    background: rgba(255, 79, 163, 0.12);
+    color: white;
+    border: 1px solid rgba(255, 79, 163, 0.35);
     border-radius: 10px;
+    padding: 8px 10px;
   }
+
+  .no-show {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 54px;
+    padding: 10px;
+    background: #17171b;
+    border: 1px solid rgba(255, 79, 163, 0.2);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-list.show {
+    display: grid;
+    gap: 6px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-left {
+    margin: 0 auto;
+  }
+
+  #skills,
+  #main,
+  #projects {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #about {
+    display: none;
+  }
+}
+
+/* Focus ring */
+a,
+button {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 10px;
+}
