@@ -355,6 +355,20 @@ main,
   background-position: center;
 }
 
+.p6 {
+  background-image: url('./images/coffeemates1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p8 {
+  background-image: url('./images/Todolist.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .card-body {
   padding: 16px;
 
